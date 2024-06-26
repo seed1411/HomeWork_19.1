@@ -39,7 +39,7 @@
             flex-wrap: nowrap;
             height: 100vh;
             height: -webkit-fill-available;
-            max-height: 100vh;
+            max-height: 150vh;
             overflow-x: auto;
             overflow-y: hidden;
         }
@@ -47,7 +47,7 @@
         .b-example-divider {
             flex-shrink: 0;
             width: 1.5rem;
-            height: 100vh;
+            height: 120vh;
             background-color: rgba(0, 0, 0, .1);
             border: solid rgba(0, 0, 0, .15);
             border-width: 1px 0;
@@ -291,7 +291,8 @@
                             <form>
                                 <div class="mb-3">
                                     <label for="username" class="form-label">Имя</label>
-                                    <input name="username" type="text" id="username" class="form-control" aria-describedby="userHelp">
+                                    <input name="username" type="text" id="username" class="form-control"
+                                           aria-describedby="userHelp">
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleInputEmail1" class="form-label">Email</label>
@@ -343,69 +344,75 @@
                         </div>
                     </div>
                 </div>
-                <table class="table table-striped">
-                    <thead>
-                    <tr>
-                        <th scope="col">Номер заказа</th>
-                        <th scope="col">Название товара</th>
-                        <th scope="col">Цена за штуку</th>
-                        <th scope="col">Количество</th>
-                        <th scope="col">Итоговая сумма</th>
-                        <th scope="col">Статус заказа</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <th>3451</th>
-                        <td>Огурец</td>
-                        <td>10 руб.</td>
-                        <td>213</td>
-                        <td>2130 руб.</td>
-                        <td>
-                            <div class="alert alert-success" role="alert">
-                                Обработан
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>22342</th>
-                        <td>Макароны</td>
-                        <td>95 руб.</td>
-                        <td>30</td>
-                        <td>2850руб.</td>
-                        <td>
-                            <div class="alert alert-danger" role="alert">
-                                Отменен
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>35783</th>
-                        <td>Помидоры</td>
-                        <td>25 руб.</td>
-                        <td>34</td>
-                        <td>850 руб.</td>
-                        <td>
-                            <div class="alert alert-warning" role="alert">
-                                Обработка
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>35783</th>
-                        <td>Яйца</td>
-                        <td>3 500 руб.</td>
-                        <td>7</td>
-                        <td>24 500 руб.</td>
-                        <td>
-                            <div class="alert alert-primary" role="alert">
-                                Новый
-                            </div>
-                        </td>
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <table class="table table-striped text-center">
+                                <thead>
+                                <tr>
+                                    <th scope="col">Номер заказа</th>
+                                    <th scope="col">Название товара</th>
+                                    <th scope="col">Цена за штуку</th>
+                                    <th scope="col">Количество</th>
+                                    <th scope="col">Итоговая сумма</th>
+                                    <th scope="col">Статус заказа</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th>3451</th>
+                                    <td>Огурец</td>
+                                    <td>10 руб.</td>
+                                    <td>213</td>
+                                    <td>2130 руб.</td>
+                                    <td>
+                                        <div class="alert alert-success" role="alert">
+                                            Обработан
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>22342</th>
+                                    <td>Макароны</td>
+                                    <td>95 руб.</td>
+                                    <td>30</td>
+                                    <td>2850руб.</td>
+                                    <td>
+                                        <div class="alert alert-danger" role="alert">
+                                            Отменен
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>35783</th>
+                                    <td>Помидоры</td>
+                                    <td>25 руб.</td>
+                                    <td>34</td>
+                                    <td>850 руб.</td>
+                                    <td>
+                                        <div class="alert alert-warning" role="alert">
+                                            Обработка
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>35783</th>
+                                    <td>Яйца</td>
+                                    <td>3 500 руб.</td>
+                                    <td>7</td>
+                                    <td>24 500 руб.</td>
+                                    <td>
+                                        <div class="alert alert-primary" role="alert">
+                                            Новый
+                                        </div>
+                                    </td>
 
-                    </tr>
-                    </tbody>
-                </table>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
 
