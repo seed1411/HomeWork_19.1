@@ -1,8 +1,8 @@
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from urllib.parse import urlparse, parse_qs
 
-hostName = "localhost"
-serverPort = 8080
+host_name = "localhost"
+server_port = 8080
 
 
 class MyServer(BaseHTTPRequestHandler):
@@ -22,13 +22,13 @@ class MyServer(BaseHTTPRequestHandler):
 
 
 if __name__ == "__main__":
-    webServer = HTTPServer((hostName, serverPort), MyServer)
-    print("Server started http://%s:%s" % (hostName, serverPort))
+    web_server = HTTPServer((host_name, server_port), MyServer)
+    print("Server started http://%s:%s" % (host_name, server_port))
 
     try:
-        webServer.serve_forever()
+        web_server.serve_forever()
     except KeyboardInterrupt:
         pass
 
-    webServer.server_close()
+    web_server.server_close()
     print("Server stopped.")
